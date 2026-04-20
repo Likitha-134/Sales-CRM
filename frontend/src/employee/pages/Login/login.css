@@ -1,0 +1,75 @@
+.employee-login-container {
+  width: 393px;
+  height: 852px;
+  background: #2051e5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+/* Middle box */
+.login-box {
+  width: 324px;
+  height: 409px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40px;
+  gap: 12px;
+}
+
+/* Logo */
+.employee-login-container .logo {
+  font-size: 18px;
+  font-weight: 600;
+  font-family: Inter, sans-serif;
+  align-items: center;
+  margin-bottom: 0;
+}
+
+.employee-login-container .logo span {
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+}
+.employee-login-container .canova {
+  color: #ffffff;
+
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+.employee-login-container .crm {
+  color: #e8e000;
+  margin-left: 2px;
+}
+
+/* Inputs */
+.input-box {
+  width: 270px;
+  height: 34px;
+  background: #d9d9d9;
+  border: none;
+  border-radius: 10px;
+  padding-left: 10px;
+  font-size: 18px;
+  font-family: Inter, sans-serif;
+  font-weight: 600;
+  color: #000;
+  top: 0;
+}
+
+/* Button */
+.submit-btn {
+  width: 99px;
+  height: 34px;
+  background: #d9d9d9;
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+  font-family: Inter, sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+}

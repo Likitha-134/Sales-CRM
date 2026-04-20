@@ -1,0 +1,47 @@
+.sidebar {
+  width: 274px;
+  min-height: 100vh;
+  background: var(--sidebar-bg);
+  padding: 20px 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar .logo {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+.sidebar .canovo {
+  color: #000;
+}
+
+.sidebar .crm {
+  color: #0003D0 ; 
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 24px; 
+}
+
+.menu-item {
+  width: 244px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  text-decoration: none;
+  color: #000;
+  border-radius: 6px;
+}
+
+.menu-item.active {
+  background: var(--sidebar-active);
+}
+.menu-item.active {
+  color: white;
+}

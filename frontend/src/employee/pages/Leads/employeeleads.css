@@ -1,0 +1,287 @@
+.leads-page {
+  width: 393px;
+  height: 852px;
+  margin: auto;
+  background: #fff;
+  padding-bottom: 100px;
+}
+
+/* HEADER */
+.top-bar {
+  height: 130px;
+  background: linear-gradient(180deg, #2051e5 10%, #1b45c2);
+  padding: 20px;
+  color: #fff;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+.logo {
+  font-size: 18px;
+  font-weight: 600;
+  display: flex;
+}
+
+.crm {
+  color: #e8e000;
+}
+.search-box,
+.leads-list {
+  width: 347px;
+  margin: 0 auto;
+}
+.leads-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.back {
+  font-size: 20px;
+}
+
+.leads-title h2 {
+  font-size: 22px;
+}
+
+/* SEARCH */
+
+.search-box {
+  width: 347px;
+  margin: 0 auto;
+  padding: 15px 0;
+}
+.search-box input {
+  width: 100%;
+  height: 40px;
+  border: none;
+  background: #d9d9d9;
+  border-radius: 8px;
+  padding-left: 10px;
+}
+
+/* LEADS */
+.leads-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-height: 520px;
+  overflow-y: auto;
+  padding-right: 6px;
+}
+
+/* CARD */
+.lead-card {
+  width: 347px;
+  height: 160px;
+  background: #eeeeee;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 10px;
+  overflow: hidden;
+}
+
+.status-line {
+  width: 3px;
+  height: 35%;
+  border-radius: 10px;
+  position: absolute;
+  left: 0;
+  top: 5px;
+}
+
+/* LEFT CONTENT */
+.lead-content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  padding-left: 10px;
+  align-items: stretch;
+}
+
+/* TEXT SIDE */
+.lead-left {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  height: 100%;
+}
+
+.lead-name {
+  font-size: 14px;
+  font-weight: 600;
+  color: #111827;
+}
+
+.lead-email {
+  font-size: 12px;
+  color: #1d4ed8;
+}
+
+.lead-date {
+  font-size: 14px;
+  color: #445668;
+  margin-bottom: 0px;
+}
+.lead-date-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11px;
+  color: #6b7280;
+  margin-top: auto;
+}
+
+.cal-icon {
+  font-size: 15px;
+  color: #445668;
+}
+
+/* RIGHT SIDE */
+.lead-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* PROGRESS RING */
+.progress-ring {
+  width: 79px;
+  height: 79px;
+  border-radius: 50%;
+  border: 6px solid #f77307;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  font-weight: 600;
+  color: #111;
+}
+
+.progress-ring.closed {
+  border-color: #9ca3af;
+  color: #9ca3af;
+  background: #f3f4f6;
+  opacity: 0.6;
+}
+
+.icon-row {
+  display: flex;
+  gap: 10px;
+  font-size: 16px;
+  margin-top: 8px;
+}
+
+/* DISABLED CARD */
+.lead-card.disabled {
+  opacity: 0.5;
+  filter: grayscale(1);
+}
+
+.lead-card:hover {
+  transform: scale(1.01);
+  transition: 0.2s;
+}
+.popup-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 999;
+  background: transparent;
+}
+
+.popup {
+  position: fixed;
+  background: #fff;
+  border-radius: 6px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+}
+.popup-type-title {
+  font-size: 12px;
+  font-weight: 500;
+  color: #363636;
+  margin-bottom: 6px;
+}
+
+.edit-popup {
+  width: 65px;
+  height: 157px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6px; /* spacing between rectangles */
+  padding: 6px 0;
+}
+
+.schedule-popup {
+  width: 153px;
+  height: 175px;
+  padding: 8px;
+}
+
+.status-popup {
+  width: 153px;
+  height: 192px;
+  padding: 8px;
+}
+
+.popup-row {
+  width: 53px;
+  height: 26px;
+  border-radius: 5px;
+  font-size: 11px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  flex: none;
+}
+
+.hot {
+  background: #f77307;
+  color: white;
+}
+.warm {
+  background: #facc15;
+}
+.cold {
+  background: #07eff7;
+  color: white;
+}
+
+.popup-input {
+  width: 100%;
+  height: 33px;
+  border: 1px solid #e0e0e0;
+  margin-top: 8px;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+.popup-textarea {
+  width: 100%;
+  height: 33px;
+  border: 1px solid #e0e0e0;
+  margin-top: 8px;
+  border-radius: 4px;
+}
+
+.popup-save {
+  width: 100%;
+  height: 34px;
+  background: #363636;
+  color: #fff;
+  margin-top: 10px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+.leads-list::-webkit-scrollbar {
+  width: 4px;
+}
