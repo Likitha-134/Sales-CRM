@@ -1,6 +1,6 @@
 const router = require("express").Router();
 const { employeeLogin } = require("../../controllers/employeeAuthController");
-
+const user = await User.findOne({ email });
 router.post("/employee-login", employeeLogin);
 const jwt = require("jsonwebtoken");
 
