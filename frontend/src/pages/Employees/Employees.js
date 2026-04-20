@@ -8,7 +8,7 @@ const Employees = () => {
   const navigate = useNavigate();
   const [employees, setEmployees] = useState([]);
   const [selected, setSelected] = useState([]);
-  const [selectAll, setSelectAll] = useState(false);
+  const [_selectAll, setSelectAll] = useState(false);
   const [activeMenu, setActiveMenu] = useState(null);
   const [showModal, setShowModal] = useState(false);
   const [filteredEmployees, setFilteredEmployees] = useState([]);
@@ -36,14 +36,14 @@ const Employees = () => {
     if (currentPage > totalPages) {
       setCurrentPage(totalPages);
     }
-  }, [totalPages]);
+  }, [totalPages,currentPage]);
 
-  const toggleSelect = (id) => {
+  const _toggleSelect = (id) => {
     setSelected((prev) =>
       prev.includes(id) ? prev.filter((x) => x !== id) : [...prev, id],
     );
   };
-  const handleSelectAll = (e) => {
+  const _handleSelectAll = (e) => {
     const checked = e.target.checked;
     setSelectAll(checked);
 
